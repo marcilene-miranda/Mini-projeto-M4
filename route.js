@@ -3,12 +3,11 @@ const router = express.Router();
 
 // Rota 1: Dados de desmatamento
 router.get('/dados-desmatamento', (req, res) => {
-  const dados = {
+  res.json({
     ano: 2024,
     desmatamento_km2: 8500,
     fonte: 'INPE'
-  };
-  res.json(dados);
+  });
 });
 
 // Rota 2: Curiosidades sobre a Amazônia
@@ -18,8 +17,8 @@ router.get('/curiosidades', (req, res) => {
     "A floresta cobre cerca de 5,5 milhões de km².",
     "Mais de 20% do oxigênio do planeta é produzido na Amazônia."
   ];
-  const random = curiosidades[Math.floor(Math.random() * curiosidades.length)];
-  res.json({ curiosidade: random });
+  const curiosidade = curiosidades[Math.floor(Math.random() * curiosidades.length)];
+  res.json({ curiosidade });
 });
 
 // Rota 3: Sugestões de livros antirracistas
@@ -41,8 +40,8 @@ router.get('/livros-antirracismo', (req, res) => {
       descricao: "Relato pessoal e político sobre identidade, racismo e resistência."
     }
   ];
-  const random = livros[Math.floor(Math.random() * livros.length)];
-  res.json(random);
+  const livro = livros[Math.floor(Math.random() * livros.length)];
+  res.json(livro);
 });
 
 module.exports = router;
