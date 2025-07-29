@@ -1,0 +1,19 @@
+{
+  "name": "mini-projeto-m4",
+  "version": "1.0.0",
+  "description": "Mini Projeto M4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcilene-miranda/Mini-projeto-M4.git"
+  },
+  "author": "Marcilene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcilene-miranda/Mini-projeto-M4/issues"
+  },
+  "homepage": "https://github.com/marcilene-miranda/Mini-projeto-M4#readme"
+}
